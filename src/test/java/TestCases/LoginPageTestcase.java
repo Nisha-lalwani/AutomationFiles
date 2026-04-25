@@ -1,15 +1,23 @@
 package TestCases;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
 import Initialization.BaseClass;
 
 public class LoginPageTestcase extends BaseClass{
 	
 	@BeforeClass
 	public void pageSetup() {
-		homePage.getStatusOfLink();
+		try {
+			homePage.getStatusOfLink();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
     @Test

@@ -1,5 +1,7 @@
 package TestCases;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -21,15 +23,19 @@ public class HomePageTestCase extends BaseClass {
 	{
 		String actTitle = homePage.getAppTitle();
 		Assert.assertTrue(actTitle.contains("Customer"), "Test Fail! Title is not matched");
-		System.out.println("Test pass! Title matched");
-		
-		
+		System.out.println("Test pass! Title matched");		
 	}
 	
 	@Test(priority=3)
 	public void validateSignInLink()
 	{
-		String nextPageUrl = homePage.getStatusOfLink();
+		String nextPageUrl = null;
+		try {
+			nextPageUrl = homePage.getStatusOfLink();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		Assert.assertTrue(nextPageUrl.contains("login"),"Test Fail: Login Page not open");
 		System.out.println("Test Pass: Application navigating to Login Page");
 	}

@@ -1,7 +1,12 @@
 package Pages;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+
+import Initialization.javaclassforintegration;
+
 
 public class HomePage {
 	//encapsulation= private data + public method
@@ -33,8 +38,9 @@ public class HomePage {
 		return driver.getTitle();
 	}
 	
-	public String getStatusOfLink()
+	public String getStatusOfLink() throws IOException
 	{
+		javaclassforintegration.getScreenshot(driver);	
 		driver.findElement(link).click();
 		return driver.getCurrentUrl();
 	}	

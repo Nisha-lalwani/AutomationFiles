@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-failed">Surefire suite</span>
+              <span class="suite-name border-passed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,31 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 3 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Surefire_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="TestCases.HomePageTestCase" class="method navigator-link" hash-for-method="validateSignInLink">validateSignInLink</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="TestCases.HomePageTestCase" class="method navigator-link" hash-for-method="verifyTitle">verifyTitle</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="TestCases.HomePageTestCase" class="method navigator-link" hash-for-method="verifyUrl">verifyUrl</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -127,7 +103,17 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="TestCases.SampleTest" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="TestCases.HomePageTestCase" class="method navigator-link" hash-for-method="validateSignInLink">validateSignInLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="TestCases.HomePageTestCase" class="method navigator-link" hash-for-method="verifyTitle">verifyTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="TestCases.HomePageTestCase" class="method navigator-link" hash-for-method="verifyUrl">verifyUrl</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -142,9 +128,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-failed">
+          <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">TestCases.HomePageTestCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -153,31 +139,6 @@
                   <a name="validateSignInLink">
                   </a> <!-- validateSignInLink -->
                   <span class="method-name">validateSignInLink</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=147.0.7727.116)
-Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e9a07c48b30faf97f3dd1b5bcac0440b, findElement {using=link text, value=Sign In}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.116, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\Hemant\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58612}, goog:processID: 31032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58612/devtoo..., se:cdpVersion: 147.0.7727.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e9a07c48b30faf97f3dd1b5bcac0440b
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
-	at Pages.HomePage.getStatusOfLink(HomePage.java:38)
-	at TestCases.HomePageTestCase.validateSignInLink(HomePageTestCase.java:32)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 33 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -185,30 +146,6 @@ Session ID: e9a07c48b30faf97f3dd1b5bcac0440b
                   <a name="verifyTitle">
                   </a> <!-- verifyTitle -->
                   <span class="method-name">verifyTitle</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=147.0.7727.116)
-Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e9a07c48b30faf97f3dd1b5bcac0440b, getTitle {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.116, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\Hemant\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58612}, goog:processID: 31032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58612/devtoo..., se:cdpVersion: 147.0.7727.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e9a07c48b30faf97f3dd1b5bcac0440b
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:642)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:334)
-	at Pages.HomePage.getAppTitle(HomePage.java:33)
-	at TestCases.HomePageTestCase.verifyTitle(HomePageTestCase.java:22)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 33 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -216,45 +153,6 @@ Session ID: e9a07c48b30faf97f3dd1b5bcac0440b
                   <a name="verifyUrl">
                   </a> <!-- verifyUrl -->
                   <span class="method-name">verifyUrl</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=147.0.7727.116)
-Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e9a07c48b30faf97f3dd1b5bcac0440b, getCurrentUrl {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.116, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\Hemant\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58612}, goog:processID: 31032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58612/devtoo..., se:cdpVersion: 147.0.7727.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e9a07c48b30faf97f3dd1b5bcac0440b
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:642)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:341)
-	at Pages.HomePage.getAppUrl(HomePage.java:27)
-	at TestCases.HomePageTestCase.verifyUrl(HomePageTestCase.java:14)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 33 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestCases.SampleTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="test">
-                  </a> <!-- test -->
-                  <span class="method-name">test</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -271,7 +169,6 @@ Session ID: e9a07c48b30faf97f3dd1b5bcac0440b
   &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;TestCases.HomePageTestCase&quot;/&gt;
-      &lt;class name=&quot;TestCases.SampleTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -285,7 +182,7 @@ Session ID: e9a07c48b30faf97f3dd1b5bcac0440b
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (2 classes)</span>
+                <span class="test-name">Surefire test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -311,28 +208,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyUrl')
+data.setCell(0, 1, 'validateSignInLink')
 data.setCell(0, 2, 'TestCases.HomePageTestCase')
-data.setCell(0, 3, 55);
+data.setCell(0, 3, 1554);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateSignInLink')
+data.setCell(1, 1, 'verifyUrl')
 data.setCell(1, 2, 'TestCases.HomePageTestCase')
-data.setCell(1, 3, 17);
+data.setCell(1, 3, 41);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyTitle')
 data.setCell(2, 2, 'TestCases.HomePageTestCase')
-data.setCell(2, 3, 14);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'test')
-data.setCell(3, 2, 'TestCases.SampleTest')
-data.setCell(3, 3, 0);
+data.setCell(2, 3, 32);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 86 ms</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -364,29 +257,16 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyUrl</span>
-                <span class="method-start">18546 ms</span>
+                <span class="method-start">6085 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyTitle</span>
-                <span class="method-start">18637 ms</span>
+                <span class="method-start">6134 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">validateSignInLink</span>
-                <span class="method-start">18659 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.SampleTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">test</span>
-                <span class="method-start">18685 ms</span>
+                <span class="method-start">6175 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

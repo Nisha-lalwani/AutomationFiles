@@ -2,5 +2,4 @@ TestCases\LoginPageTestcase.class
 Initialization\BaseClass.class
 TestCases\HomePageTestCase.class
 Pages\LoginPage.class
-TestCases\SampleTest.class
 Pages\HomePage.class
