@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-25T23:33:35 IST" name="Default suite" finished-at="2026-04-25T23:33:42 IST" duration-ms="7059">
+  <suite started-at="2026-04-26T00:00:05 IST" name="Default suite" finished-at="2026-04-26T00:00:13 IST" duration-ms="7220">
     <groups>
     </groups>
-    <test started-at="2026-04-25T23:33:35 IST" name="Default test" finished-at="2026-04-25T23:33:42 IST" duration-ms="7059">
-      <class name="TestCases.LoginPageTestcase">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.LoginPageTestcase@65fb9ffc]" started-at="2026-04-25T23:33:35 IST" name="setup" finished-at="2026-04-25T23:33:38 IST" duration-ms="3926" status="PASS">
+    <test started-at="2026-04-26T00:00:05 IST" name="Default test" finished-at="2026-04-26T00:00:13 IST" duration-ms="7220">
+      <class name="TestCases.HomePageTestCase">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.HomePageTestCase@65fb9ffc]" started-at="2026-04-26T00:00:05 IST" name="setup" finished-at="2026-04-26T00:00:11 IST" duration-ms="5434" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="pageSetup()[pri:0, instance:TestCases.LoginPageTestcase@65fb9ffc]" started-at="2026-04-25T23:33:38 IST" name="pageSetup" finished-at="2026-04-25T23:33:40 IST" duration-ms="1613" status="PASS">
+        <test-method signature="verifyUrl()[pri:1, instance:TestCases.HomePageTestCase@65fb9ffc]" started-at="2026-04-26T00:00:11 IST" name="verifyUrl" finished-at="2026-04-26T00:00:11 IST" duration-ms="108" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pageSetup -->
-        <test-method signature="validateLogin()[pri:0, instance:TestCases.LoginPageTestcase@65fb9ffc]" started-at="2026-04-25T23:33:40 IST" name="validateLogin" finished-at="2026-04-25T23:33:42 IST" duration-ms="1436" status="PASS">
+        </test-method> <!-- verifyUrl -->
+        <test-method signature="verifyTitle()[pri:2, instance:TestCases.HomePageTestCase@65fb9ffc]" started-at="2026-04-26T00:00:11 IST" name="verifyTitle" finished-at="2026-04-26T00:00:11 IST" duration-ms="44" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateLogin -->
-      </class> <!-- TestCases.LoginPageTestcase -->
+        </test-method> <!-- verifyTitle -->
+        <test-method signature="validateSignInLink()[pri:3, instance:TestCases.HomePageTestCase@65fb9ffc]" started-at="2026-04-26T00:00:11 IST" name="validateSignInLink" finished-at="2026-04-26T00:00:13 IST" duration-ms="1523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSignInLink -->
+      </class> <!-- TestCases.HomePageTestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
